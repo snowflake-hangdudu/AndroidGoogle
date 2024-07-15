@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="Choose your flavor"
+    android:background="#E6E6FA"
+    android:padding="10dp" />
+  
+  <RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+    
+    
+    <RadioButton
+      android:id="@+id/vanilla"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="vanilla"
+      android:checked="true" />
+    
+    <RadioButton
+      android:id="@+id/chocolate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="chocolate"
+       />
+    
+    <RadioButton
+      android:id="@+id/redVelvet"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="redVelvet"
+      />
+    
+    <RadioButton
+      android:id="@+id/saltedCaramel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="saltedCaramel" />
+    
+    <RadioButton
+      android:id="@+id/coffee"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="coffee" />
+  
+  </RadioGroup>
+  
+  <!-- 添加横线 -->
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="?android:attr/listDivider" />
+  
+  <TextView
+    android:id="@+id/total"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    
+    android:text="Total: $0.00"
+    android:gravity="end"
+    android:paddingLeft="16dp"
+    />
+  
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+  
+  
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+  
+    >
+    
+    <Button
+      android:id="@+id/next"
+      android:layout_width="0dp"
+      android:layout_weight="4"
+      android:layout_height="wrap_content"
+      android:text="Next" />
+    
+    <Space
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+    <Button
+      android:id="@+id/cancel"
+      android:layout_width="0dp"
+      android:layout_weight="4"
+      android:layout_height="wrap_content"
+      android:text="Cancel" />
+  </LinearLayout>
+
+
+</LinearLayout>
+
+
+

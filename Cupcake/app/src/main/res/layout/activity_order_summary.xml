@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16px"
+    >
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:text="Order Summary"
+      android:background="#E6E6FA"
+      android:padding="10dp" />
+    
+    <TextView
+      
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:text="QUANTITY" />
+    
+    <EditText
+      
+      android:id="@+id/quantity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="输入数量" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:text="FLAVOR" />
+    <EditText
+      android:id="@+id/flavor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="输入口味" />
+    
+    <TextView
+      
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:text="PICKUP DATE" />
+    <EditText
+      android:id="@+id/date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="输入日期" />
+    
+    
+    <TextView
+      android:id="@+id/total"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:text="Total: $0.00"
+      android:gravity="end"
+      android:paddingLeft="16dp"
+      />
+    
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+    
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+     
+      >
+      
+      <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Order to ANother App" />
+      
+      
+      <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+    </LinearLayout>
+  </LinearLayout>
+  
+  
+
+
+</LinearLayout>
+
+
