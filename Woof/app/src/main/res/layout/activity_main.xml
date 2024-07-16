@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+
+  android:padding="16dp"
+  android:orientation="vertical">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="16dp"
+    >
+    <ImageView
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@drawable/ic_woof_logo"
+      android:scaleType="fitCenter" />
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:text="Hello World!"
+      android:gravity="center_vertical"
+      android:textSize="24sp" />
+  </LinearLayout>
+  
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+     
+      android:layout_marginBottom="16dp">
+      
+      <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tzeitel"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circle" />
+      
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_gravity="center_vertical"
+          android:text="hangdudu"
+          android:textSize="16sp"
+          android:layout_margin="16dp" />
+        
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_gravity="center_vertical"
+          android:text="hangdudu do"
+          android:textSize="16sp"
+          android:layout_margin="16dp" />
+      </LinearLayout>
+      <ImageView
+        android:id="@+id/icon_expand_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_expand_more"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    
+      
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/hobby"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="16dp"
+      android:visibility="gone"
+      >
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="play play tft"
+        android:textSize="16sp"
+        />
+    </LinearLayout>
+  
+  </LinearLayout>
+  
+  
+
+
+  
+
+
+</LinearLayout>

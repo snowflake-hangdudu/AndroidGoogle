@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/day_30_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:text="Day 30"
+    />
+
+  <TextView
+    android:id="@+id/day_30_description_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:text="Learn about Android Jetpack"
+     />
+  
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:scaleType="centerCrop"
+    />
+
+</LinearLayout>
