@@ -1,4 +1,4 @@
-package com.example.a30daysofwellness.day30;
+package com.example.a30daysofwellness.model;
 
 public class Day30 {
     int imgid;
